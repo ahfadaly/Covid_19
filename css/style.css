@@ -1,0 +1,248 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #F9F9F9;
+}
+   /* start header=============== */
+  header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    right: 0px;
+    top: 0;
+    background-color: #FFF;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+  }
+  header nav ul li {
+    margin-left: 25px;
+  }
+  header nav ul li a{
+    color: #999999;
+    transition: all .5s cubic-bezier(.16, .8, .62, 1.52);
+  }
+  header nav ul .active{
+    border-bottom: 0.5px solid #EB233C;
+  }
+  header .navbar-brand{
+    color: #666;
+  }
+  header nav ul li a:hover{
+    border-bottom: 0.5px solid #EB233C;
+    color: #EB233C;
+  }
+  header button {
+    outline: none !important;
+  }
+  header button span i{
+   color: #EB233C;
+  }
+  @media (max-width: 991px) {
+    header nav ul{
+     text-align: center;
+    }
+    header nav ul li{
+      margin: 0;
+    }
+    header nav ul .active{
+      border: none;
+    }
+  }
+   /* End header ================*/
+
+  /* start section home  */
+  section h3{
+    color: #FF4F5B;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  section h2{
+    color:#666666;
+    font-weight: 700;
+  }
+  section button{
+    background-color: #FF4F5B;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    transition: 0.6s;
+  }
+  section button:focus{
+    outline: none;
+  }
+  section button:hover,
+  section button:focus{
+    background-color:#444444;
+  }
+   /* End section home  */
+
+  /* start Protect */
+  .Protect h2{
+    color:#666666;
+    font-weight: 700;
+  }
+  .Protect h2 span{
+    color: #FF4F5B;
+  }
+  .Protect .box{
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    transition: transform .6s ease-out;
+    margin-bottom: 15px;
+  }
+  .Protect .box:hover{
+    transform: translate(0, -10px);
+  }
+  .Protect .box h3{
+    color:#666666;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .Protect .box p{
+   color: #A2A2A2;
+   font-size: 14px;
+  }
+  .Protect .box a{
+    background-color: #FF4F5B;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.6s;
+  }
+  .Protect .box a:hover{
+    background-color:#444444;
+  }
+  /* End Protect */
+
+  /* start symtoms */
+  .symtoms .symtoms-desc{
+    margin-bottom: 20px;
+  }
+  .symtoms .symtoms-desc h2{
+    color:#666666;
+    font-weight: 700;
+  }
+  .symtoms .symtoms-desc h2 span{
+    color: #FF4F5B
+  }
+  .symtoms .symtoms-desc p{
+    color: #2A2E31;
+  }
+  .symtoms .symtoms-desc a{
+    background-color: #FF4F5B;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.6s;
+  }
+  .symtoms .symtoms-desc a:hover{
+    background-color:#444444;
+  }
+  @media (max-width:767px) {
+    .symtoms .symtoms-desc h2 {
+      font-size: 22px;
+    }
+  }
+  /* End symtoms */
+ 
+  /* start prevent */
+  .prevent{
+    background-color:#222222;
+  }
+  .prevent .things h3{
+    color: #FFF;
+    font-weight: 700;
+  }
+  .prevent .things h3 span{
+    color: #FF4F5B;
+  }
+  .prevent .things p,
+  .prevent .things ul li{
+     color: #A2A2A2;
+  }
+  @media (max-width:767px) {
+    .prevent .things{
+      margin-top: -80px !important;
+    }
+    .prevent .things h3{
+      font-size: 22px;
+    }
+  }
+  /* End prevent */
+
+  /* start handwash */
+  .handwash h2{
+    color:#666666;
+    font-weight: 700;
+  }
+  .handwash h2 span{
+    color: #EB233C;
+  }
+  .handwash .box{
+    background-color: #FFF;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    position: relative;
+    transition: transform .6s ease-out;
+  }
+  .handwash .box h5{
+    color:#666666;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .handwash .box span{
+    background-color: #FF4F5B;
+    color: #FFF;
+    padding: 8px 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: -15px;
+  }
+  .handwash .box:hover{
+    transform: translate(0, -10px);
+    border-bottom: solid 2px red;
+  }
+  /* End handwash */
+
+/* start Spread */
+.spread h2 span{
+  color: #EB233C;
+}
+
+/* End Spread */
+
+  /* scroll-top =====================  */
+  .scroll-top{
+  background-color: #FF4F5B;
+  color: #fff;
+  padding: 8px 13px;
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 666;
+  display: none;
+  cursor: pointer;
+  transition: 0.8s;
+  transition: transform .3s ease-out;
+  }
+  .scroll-top i{
+    color: #FFF;
+  }
+  .scroll-top:hover{
+    transform: translate(0, -10px);
+  }
